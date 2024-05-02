@@ -4,6 +4,7 @@ Plugin.name = 'navigator'
 
 Plugin.dependencies = {
 	{ 'ray-x/guihua.lua', build = 'cd lua/fzy && make' },
+	{ 'neovim/nvim-lspconfig' },
 }
 
 function Plugin.init()

@@ -25,7 +25,7 @@ vim.opt.termguicolors = true
 -- Neovide Specific
 if vim.g.neovide then
   -- vim.o.guifont = "GoMono Nerd Font:h12:#e-subpixelantialias"
-  vim.o.guifont = "FantasqueSansM Nerd Font:h13:#e-subpixelantialias"
+  vim.o.guifont = "FantasqueSansM Nerd Font:h18:#e-subpixelantialias"
   vim.g.neovide_remember_window_size = true
   vim.g.neovide_theme = 'auto'
 
