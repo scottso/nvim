@@ -1,21 +1,6 @@
-if true then return end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- This will run last in the setup process and is a good place to configure
--- things like custom filetypes. This just pure lua so anything that doesn't
+-- things like custom filetypes. This is just pure lua so anything that doesn't
 -- fit in the normal config locations above can go here
-
--- Set up custom filetypes
-vim.filetype.add {
-  extension = {
-    foo = "fooscript",
-  },
-  filename = {
-    ["Foofile"] = "fooscript",
-  },
-  pattern = {
-    ["~/%.config/foo/.*"] = "fooscript",
-  },
-}
 
 vim.opt.number = true
 vim.opt.mouse = ""
@@ -49,10 +34,31 @@ vim.g.autopairs_enabled = true
 -- set the visibility of diagnostics in the UI (0=off, 1=only show in status line, 2=virtual text off, 3=all on)
 vim.g.diagnostics_mode = 3
 
--- Neovide specific setup
-vim.opt.guifont = "Berkeley Mono Nerd Font:h18:#e-subpixelantialias"
-vim.g.neovide_remember_window_size = true
-vim.g.neovide_theme = "auto"
--- neovide_cursor_vfx_mode = "railgun"
--- neovide_cursor_vfx_mode = "torpedo"
-vim.g.neovide_cursor_vfx_mode = "pixiedust"
+if vim.g.neovide then
+  -- Neovide specific setup
+  -- vim.opt.guifont = "Berkeley Mono Nerd Font:h18:#e-subpixelantialias"
+  vim.opt.guifont = "FantasqueSansM Nerd Font:h18:#e-subpixelantialias"
+  vim.g.neovide_remember_window_size = true
+  vim.g.neovide_theme = "auto"
+  -- neovide_cursor_vfx_mode = "railgun"
+  -- neovide_cursor_vfx_mode = "torpedo"
+  vim.g.neovide_cursor_vfx_mode = "pixiedust"
+end
+
+--[[
+
+-- Set up custom filetypes
+vim.filetype.add {
+  extension = {
+    foo = "fooscript",
+  },
+  filename = {
+    ["Foofile"] = "fooscript",
+  },
+  pattern = {
+    ["~/%.config/foo/.*"] = "fooscript",
+  },
+}
+
+]]
+--
