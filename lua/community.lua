@@ -8,4 +8,6 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.recipes.vscode" },
   -- import/override with your plugins folder
+  { import = "astrocommunity.syntax.vim-cool" },
+  { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
 }
