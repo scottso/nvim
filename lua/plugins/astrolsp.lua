@@ -14,7 +14,7 @@ return {
     features = {
       autoformat = true, -- enable or disable auto formatting on start
       codelens = true, -- enable/disable codelens refresh on start
-      inlay_hints = false, -- enable/disable inlay hints on start
+      inlay_hints = true, -- enable/disable inlay hints on start
       semantic_tokens = true, -- enable/disable semantic token highlighting
     },
     -- customize lsp formatting options
@@ -33,7 +33,7 @@ return {
         -- disable lua_ls formatting capability if you want to use StyLua to format your lua code
         -- "lua_ls",
       },
-      timeout_ms = 1000, -- default format timeout
+      timeout_ms = 3000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
       --   return true
       -- end
@@ -86,11 +86,11 @@ return {
       n = {
         gl = { function() vim.diagnostic.open_float() end, desc = "Hover diagnostics" },
         -- a `cond` key can provided as the string of a server capability to be required to attach, or a function with `client` and `bufnr` parameters from the `on_attach` that returns a boolean
-        -- gD = {
-        --   function() vim.lsp.buf.declaration() end,
-        --   desc = "Declaration of current symbol",
-        --   cond = "textDocument/declaration",
-        -- },
+        gD = {
+          function() vim.lsp.buf.declaration() end,
+          desc = "Declaration of current symbol",
+          cond = "textDocument/declaration",
+        },
         -- ["<Leader>uY"] = {
         --   function() require("astrolsp.toggles").buffer_semantic_tokens() end,
         --   desc = "Toggle LSP semantic highlight (buffer)",

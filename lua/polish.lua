@@ -37,11 +37,12 @@ vim.g.diagnostics_mode = 3
 if vim.g.neovide then
   -- Neovide specific setup
   -- vim.opt.guifont = "Berkeley Mono Nerd Font:h18:#e-subpixelantialias"
-  vim.opt.guifont = "FantasqueSansM Nerd Font:h18:#e-subpixelantialias"
+  -- vim.opt.guifont = "FantasqueSansM Nerd Font:h18:#e-subpixelantialias"
+  vim.opt.guifont = "MonoLisa Uncursive,Symbols Nerd Font Mono:h16:#e-subpixelantialias"
   vim.g.neovide_remember_window_size = true
   vim.g.neovide_theme = "auto"
-  -- neovide_cursor_vfx_mode = "railgun"
-  -- neovide_cursor_vfx_mode = "torpedo"
+  -- vim.g.neovide_cursor_vfx_mode = "railgun"
+  -- vim.g.neovide_cursor_vfx_mode = "torpedo"
   vim.g.neovide_cursor_vfx_mode = "pixiedust"
 end
 
