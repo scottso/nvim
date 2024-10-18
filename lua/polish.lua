@@ -23,6 +23,8 @@ vim.opt.signcolumn = "yes"
 vim.opt.termguicolors = true
 vim.opt.foldenable = false
 
+vim.g.loaded_perl_provider = 0
+
 -- sets vim.g.mapleader
 vim.g.mapleader = " "
 -- enable or disable auto formatting at start (lsp.formatting.format_on_save must be enabled)
