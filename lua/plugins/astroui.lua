@@ -10,6 +10,7 @@ return {
   opts = {
     -- change colorscheme
     -- colorscheme = "astrodark",
-    colorscheme = "monokai-pro",
+    -- colorscheme = "monokai-pro",
+    colorschee = "PaperColor",
   },
 }
