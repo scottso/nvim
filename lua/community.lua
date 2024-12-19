@@ -18,4 +18,5 @@ return {
   -- import/override with your plugins folder
   { import = "astrocommunity.syntax.vim-cool" },
   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
+  { import = "astrocommunity.completion.blink-cmp" },
 }

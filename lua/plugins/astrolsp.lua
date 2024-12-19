@@ -45,6 +45,8 @@ return {
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
+      lua_ls = { capabilities = require("blink.cmp").get_lsp_capabilities() },
+      gopls = { capabilities = require("blink.cmp").get_lsp_capabilities() },
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
     },
     -- customize how language servers are attached

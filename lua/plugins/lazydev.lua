@@ -1,7 +1,7 @@
 return {
   {
     "folke/lazydev.nvim",
-    enabled = false,
+    enabled = true,
     ft = "lua", -- only load on lua files
     opts = {
       library = {
@@ -22,5 +22,5 @@ return {
       })
     end,
   },
-  { "folke/neodev.nvim", enabled = true }, -- make sure to uninstall or disable neodev.nvim
+  { "folke/neodev.nvim", enabled = false }, -- make sure to uninstall or disable neodev.nvim
 }
