@@ -17,7 +17,7 @@ return {
   opts = {
     -- Disable for some filetypes
     enabled = function()
-      return not vim.tbl_contains({ "lua", "markdown" }, vim.bo.filetype)
+      return not vim.tbl_contains({ "markdown" }, vim.bo.filetype)
         and vim.bo.buftype ~= "prompt"
         and vim.b.completion ~= false
     end,
@@ -75,13 +75,22 @@ return {
       default = function()
         local success, node = pcall(vim.treesitter.get_node)
         if vim.bo.filetype == "lua" then
-          return { "lsp", "path" }
+          return { "lazydev", "lsp", "path" }
         elseif success and node and vim.tbl_contains({ "comment", "line_comment", "block_comment" }, node:type()) then
           return { "buffer" }
         else
           return { "lsp", "path", "snippets", "buffer" }
         end
       end,
+
+      providers = {
+        lazydev = {
+          name = "LazyDev",
+          module = "lazydev.integrations.blink",
+          -- make lazydev completions top priority (see `:h blink.cmp`)
+          score_offset = 100,
+        },
+      },
     },
 
     -- Experimental signature help support
