@@ -20,4 +20,5 @@ return {
   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
   { import = "astrocommunity.completion.blink-cmp" },
   { import = "astrocommunity.git.neogit" },
+  { import = "astrocommunity.git.diffview-nvim" },
 }
