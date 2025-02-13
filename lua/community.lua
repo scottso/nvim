@@ -19,4 +19,5 @@ return {
   { import = "astrocommunity.syntax.vim-cool" },
   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
   { import = "astrocommunity.completion.blink-cmp" },
+  { import = "astrocommunity.git.neogit" },
 }
