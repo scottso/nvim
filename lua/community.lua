@@ -32,6 +32,7 @@ return {
   { import = "astrocommunity.motion.vim-matchup" },
   { import = "astrocommunity.scrolling.vim-smoothie" },
   { import = "astrocommunity.media.codesnap-nvim" },
+  { import = "astrocommunity.editing-support.nvim-treesitter-context" },
   { import = "astrocommunity.indent.indent-blankline-nvim" },
   -- Can't have both rainbowline and mini-identscope
   -- { import = "astrocommunity.indent.indent-rainbowline" },
