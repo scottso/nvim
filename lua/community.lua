@@ -18,7 +18,8 @@ return {
   { import = "astrocommunity.pack.yaml" },
   -- import/override with your plugins folder
   { import = "astrocommunity.recipes.vscode" },
-  { import = "astrocommunity.recipes.telescope-lsp-mappings" },
+  -- { import = "astrocommunity.recipes.telescope-lsp-mappings" },
+  { import = "astrocommunity.recipes.picker-lsp-mappings" },
   { import = "astrocommunity.syntax.vim-cool" },
   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
   { import = "astrocommunity.completion.blink-cmp" },
