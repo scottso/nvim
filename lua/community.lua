@@ -18,8 +18,8 @@ return {
   { import = "astrocommunity.pack.yaml" },
   -- import/override with your plugins folder
   { import = "astrocommunity.recipes.vscode" },
-  -- { import = "astrocommunity.recipes.telescope-lsp-mappings" },
-  { import = "astrocommunity.recipes.picker-lsp-mappings" },
+  { import = "astrocommunity.recipes.telescope-lsp-mappings" },
+  -- { import = "astrocommunity.recipes.picker-lsp-mappings" },
   { import = "astrocommunity.syntax.vim-cool" },
   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
   { import = "astrocommunity.completion.blink-cmp" },
@@ -38,4 +38,6 @@ return {
   -- Can't have both rainbowline and mini-identscope
   -- { import = "astrocommunity.indent.indent-rainbowline" },
   { import = "astrocommunity.indent.mini-indentscope" },
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
+  { import = "astrocommunity.fuzzy-finder.fzf-lua" },
 }

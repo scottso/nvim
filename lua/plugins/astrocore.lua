@@ -32,11 +32,34 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "auto", -- sets vim.opt.signcolumn to auto
         wrap = false, -- sets vim.opt.wrap
+        mouse = "",
+        ignorecase = true,
+        smartcase = true,
+        hlsearch = false,
+        breakindent = true,
+        tabstop = 2,
+        shiftwidth = 2,
+        expandtab = false,
+        undofile = true,
+        undolevels = 1500, -- how many times the user can undo
+        undoreload = 10000,
+        autoindent = true,
+        cindent = true,
+        cinoptions = "g0:0t0c2C1(0f0l1",
+        termguicolors = true,
+        foldenable = false,
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
         -- NOTE: `mapleader` and `maplocalleader` must be set in the AstroNvim opts or before `lazy.setup`
         -- This can be found in the `lua/lazy_setup.lua` file
+        loaded_perl_provider = 0,
+        loaded_ruby_provider = 0,
+        loaded_python3_provider = 0,
+        autoformat_enabled = true, -- enable or disable auto formatting at start (lsp.formatting.format_on_save must be enabled)
+        cmp_enabled = true, -- enable completion at start
+        autopairs_enabled = true, -- enable autopairs at start
+        diagnostics_mode = 3, -- set the visibility of diagnostics in the UI (0=off, 1=only show in status line, 2=virtual text off, 3=all on)
       },
     },
     -- Mappings can be configured through AstroCore as well.
