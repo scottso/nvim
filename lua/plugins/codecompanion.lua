@@ -1,4 +1,4 @@
---if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 ---@diagnostic disable-next-line: unused-local
 local function generate_slash_commands()
@@ -23,6 +23,17 @@ return {
       "ravitemer/mcphub.nvim",
       { "MeanderingProgrammer/render-markdown.nvim", ft = { "markdown", "codecompanion" } },
     },
+    display = {
+      chat = {
+        auto_scroll = false, -- Whether to page scroll during response streaming
+        show_header_separator = false, -- Show header separators in the chat buffer? Set this to false if you're using an external markdown formatting plugin
+        separator = "─", -- The separator between the different messages in the chat buffer
+        show_references = true, -- Show references (from slash commands and variables) in the chat buffer?
+        show_settings = true, -- Show LLM settings at the top of the chat buffer?
+        show_token_count = true, -- Show the token count for each response?
+        start_in_insert_mode = false, -- Open the chat buffer in insert mode?
+      },
+    },
     opts = {
       strategies = {
         chat = {
@@ -43,7 +54,7 @@ return {
             },
             stop = {
               modes = {
-                n = "<C-c",
+                n = "<C-c>",
               },
               index = 4,
               callback = "keymaps.stop",
@@ -57,6 +68,10 @@ return {
       },
     },
     keys = {
+      {
+        "<leader>a",
+        desc = "AI",
+      },
       {
         "<leader>ac",
         "<cmd>CodeCompanionActions<cr>",
