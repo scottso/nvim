@@ -27,6 +27,8 @@ return {
     -- vim options can be configured here
     options = {
       opt = { -- vim.opt.<key>
+        foldenable = false,
+        foldcolumn = "0",
         relativenumber = true, -- sets vim.opt.relativenumber
         number = true, -- sets vim.opt.number
         spell = false, -- sets vim.opt.spell
@@ -47,7 +49,6 @@ return {
         cindent = true,
         cinoptions = "g0:0t0c2C1(0f0l1",
         termguicolors = true,
-        foldenable = false,
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)

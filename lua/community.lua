@@ -40,4 +40,5 @@ return {
   { import = "astrocommunity.indent.mini-indentscope" },
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
   { import = "astrocommunity.fuzzy-finder.fzf-lua" },
+  { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
 }
