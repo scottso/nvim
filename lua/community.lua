@@ -13,16 +13,14 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.python" },
-  -- { import = "astrocommunity.pack.templ" },
-  -- { import = "astrocommunity.pack.tailwindcss" },
+  { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.pack.yaml" },
-  -- import/override with your plugins folder
   { import = "astrocommunity.recipes.vscode" },
   { import = "astrocommunity.recipes.telescope-lsp-mappings" },
   -- { import = "astrocommunity.recipes.picker-lsp-mappings" },
   { import = "astrocommunity.syntax.vim-cool" },
   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
-  { import = "astrocommunity.completion.blink-cmp" },
+  -- { import = "astrocommunity.completion.blink-cmp" },
   { import = "astrocommunity.git.neogit" },
   { import = "astrocommunity.git.diffview-nvim" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
@@ -41,4 +39,5 @@ return {
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
   { import = "astrocommunity.fuzzy-finder.fzf-lua" },
   { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
+  -- import/override with your plugins folder
 }
