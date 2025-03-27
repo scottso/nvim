@@ -22,6 +22,11 @@ return {
 
         -- install any other package
         "tree-sitter-cli",
+        "golangci-lint",
+        "gci",
+        "gofumpt",
+        "goimports-reviser",
+        "golines",
       },
     },
   },
