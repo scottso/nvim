@@ -15,24 +15,26 @@ return {
 			large_buf = { size = 1024 * 256, lines = 10000 }, -- set global limits for large files for disabling features like treesitter
 			autopairs = true, -- enable autopairs at start
 			cmp = true, -- enable completion at start
-			diagnostics = { virtual_text = true, virtual_lines = true }, -- diagnostic settings on startup
+			diagnostics = { virtual_text = true, virtual_lines = false }, -- diagnostic settings on startup
 			highlighturl = true, -- highlight URLs at start
 			notifications = true, -- enable notifications at start
 		},
 		-- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
 		diagnostics = {
-			virtual_text = {
-				enabled = true,
-				severity = {
-					max = vim.diagnostic.severity.WARN,
-				},
-			},
-			virtual_lines = {
-				enabled = true,
-				severity = {
-					min = vim.diagnostic.severity.ERROR,
-				},
-			},
+			virtual_text = true,
+			-- These will make errors use virtual_lines and warns virtual text
+			-- virtual_text = {
+			-- 	enabled = true,
+			-- 	-- 		severity = {
+			-- 	-- 			max = vim.diagnostic.severity.WARN,
+			-- 	-- 		},
+			-- },
+			-- virtual_lines = {
+			-- 	enabled = false,
+			-- 	severity = {
+			-- 		min = vim.diagnostic.severity.ERROR,
+			-- 	},
+			-- },
 			underline = true,
 		},
 		-- vim options can be configured here

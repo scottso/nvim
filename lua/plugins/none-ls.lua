@@ -23,7 +23,10 @@ return {
 
 		opts.sources = {
 			null_ls.builtins.diagnostics.golangci_lint.with({
-				args = { "run", "--output.json.path=stdout", "--show-stats=false", "--fix=false" },
+				cwd = require("null-ls.helpers").cache.by_bufnr(function(params)
+					return require("null-ls.utils").root_pattern(".golangci.yml")(params.bufname)
+				end),
+				args = { "run", "--fix=false", "--show-stats=false", "--output.json.path=stdout", "$DIRNAME" },
 			}),
 		}
 	end,
