@@ -18,6 +18,7 @@ return {
 			diagnostics = { virtual_text = true, virtual_lines = false }, -- diagnostic settings on startup
 			highlighturl = true, -- highlight URLs at start
 			notifications = true, -- enable notifications at start
+			laststatus = 3, -- views can only be fully collapsed with the global statusline
 		},
 		-- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
 		diagnostics = {
