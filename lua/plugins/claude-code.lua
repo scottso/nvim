@@ -1,6 +1,4 @@
-if true then
-	return {}
-end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 ---@type LazySpec
 return {
@@ -11,20 +9,44 @@ return {
 	keys = {
 		{
 			"<leader>a",
-			desc = "AI",
+			desc = "ClaudeCode",
 		},
 		{
-			"<leader>ac",
+			"<leader>ai",
 			"<cmd>ClaudeCode<cr>",
 			mode = { "n", "v" },
 			noremap = true,
 			silent = true,
 			desc = "ClaudeCode chat",
 		},
+		{
+			"<leader>ar",
+			"<cmd>ClaudeCodeResume<cr>",
+			mode = { "n", "v" },
+			noremap = true,
+			silent = true,
+			desc = "ClaudeCode Display an interactive conversation picker",
+		},
+		{
+			"<leader>ac",
+			"<cmd>ClaudeCodeContinue<cr>",
+			mode = { "n", "v" },
+			noremap = true,
+			silent = true,
+			desc = "ClaudeCode Continue the most recent conversation",
+		},
+		{
+			"<leader>av",
+			"<cmd>ClaudeCodeVerbose<cr>",
+			mode = { "n", "v" },
+			noremap = true,
+			silent = true,
+			desc = "ClaudeCode Enable verbose logging with full turn-by-turn output",
+		},
 	},
 	opts = {
 		window = {
-			height_ratio = 1.0, -- Percentage of screen height for the terminal window
+			split_ratio = 0.4, -- Percentage of screen height for the terminal window
 			position = "vertical",
 		},
 		git = {
