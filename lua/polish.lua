@@ -3,17 +3,17 @@
 -- fit in the normal config locations above can go here
 
 if vim.g.neovide then
-  -- Neovide specific setup
-  -- vim.opt.guifont = "Berkeley Mono Nerd Font:h18:#e-subpixelantialias"
-  -- vim.opt.guifont = "FantasqueSansM Nerd Font:h18:#e-subpixelantialias"
-  vim.opt.guifont = "MonoLisa Uncursive,Symbols Nerd Font Mono:h16:#e-subpixelantialias"
-  vim.g.neovide_remember_window_size = true
-  vim.g.neovide_theme = "auto"
-  -- vim.g.neovide_cursor_vfx_mode = "railgun"
-  -- vim.g.neovide_cursor_vfx_mode = "torpedo"
-  vim.g.neovide_cursor_vfx_mode = "pixiedust"
-  vim.g.neovide_cursor_vfx_opacity = 225.0
-  vim.g.neovide_cursor_vfx_particle_density = 50.0
+	-- Neovide specific setup
+	-- vim.opt.guifont = "Berkeley Mono Nerd Font:h18:#e-subpixelantialias"
+	-- vim.opt.guifont = "FantasqueSansM Nerd Font:h18:#e-subpixelantialias"
+	vim.opt.guifont = "MonoLisa Uncursive,Symbols Nerd Font Mono:h16:#e-subpixelantialias"
+	vim.g.neovide_remember_window_size = true
+	vim.g.neovide_theme = "auto"
+	-- vim.g.neovide_cursor_vfx_mode = "railgun"
+	-- vim.g.neovide_cursor_vfx_mode = "torpedo"
+	vim.g.neovide_cursor_vfx_mode = "pixiedust"
+	vim.g.neovide_cursor_vfx_opacity = 225.0
+	vim.g.neovide_cursor_vfx_particle_density = 50.0
 end
 
 --[[
@@ -33,3 +33,8 @@ vim.filetype.add {
 
 ]]
 --
+vim.filetype.add({
+	pattern = {
+		[".*/helm/.*"] = "helm",
+	},
+})
