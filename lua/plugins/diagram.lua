@@ -12,8 +12,8 @@ return {
 				background = "transparent", -- nil | "transparent" | "white" | "#hex"
 				theme = "neutral", -- nil | "default" | "dark" | "forest" | "neutral"
 				scale = 4, -- nil | 1 (default) | 2  | 3 | ...
-				width = 800, -- nil | 800 | 400 | ...
-				height = 600, -- nil | 600 | 300 | ...
+				width = 1024, -- nil | 800 | 400 | ...
+				height = 768, -- nil | 600 | 300 | ...
 			},
 			plantuml = {
 				charset = "utf-8",
@@ -23,7 +23,7 @@ return {
 			},
 			gnuplot = {
 				theme = "dark",
-				size = "800,600",
+				size = "1024,768",
 			},
 		},
 	},
